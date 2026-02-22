@@ -1,0 +1,500 @@
+2026-02-22T10:21:21.333Z [INFO] #12 6.181   Downloading yarl-1.22.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (75 kB)
+2026-02-22T10:21:21.333Z [INFO] #12 6.186      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.1/75.1 kB 20.3 MB/s eta 0:00:00
+2026-02-22T10:21:21.333Z [INFO] #12 6.210 Collecting aiodns>=3.3.0 (from aiohttp[speedups]>=3.9.3->runpod)
+2026-02-22T10:21:21.333Z [INFO] #12 6.215   Downloading aiodns-4.0.0-py3-none-any.whl.metadata (7.7 kB)
+2026-02-22T10:21:21.333Z [INFO] #12 6.257 Collecting Brotli>=1.2 (from aiohttp[speedups]>=3.9.3->runpod)
+2026-02-22T10:21:21.333Z [INFO] #12 6.262   Downloading brotli-1.2.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.1 kB)
+2026-02-22T10:21:21.333Z [INFO] #12 6.327 Collecting backports.zstd (from aiohttp[speedups]>=3.9.3->runpod)
+2026-02-22T10:21:21.489Z [INFO] #12 6.332   Downloading backports_zstd-1.3.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (6.9 kB)
+2026-02-22T10:21:22.011Z [INFO] #12 7.005 Collecting botocore<1.43.0,>=1.42.54 (from boto3>=1.26.165->runpod)
+2026-02-22T10:21:22.174Z [INFO] #12 7.009   Downloading botocore-1.42.54-py3-none-any.whl.metadata (5.9 kB)
+2026-02-22T10:21:22.174Z [INFO] #12 7.027 Collecting jmespath<2.0.0,>=0.7.1 (from boto3>=1.26.165->runpod)
+2026-02-22T10:21:22.174Z [INFO] #12 7.031   Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+2026-02-22T10:21:22.174Z [INFO] #12 7.058 Collecting s3transfer<0.17.0,>=0.16.0 (from boto3>=1.26.165->runpod)
+2026-02-22T10:21:22.174Z [INFO] #12 7.062   Downloading s3transfer-0.16.0-py3-none-any.whl.metadata (1.7 kB)
+2026-02-22T10:21:22.174Z [INFO] #12 7.094 Requirement already satisfied: cffi>=1.14 in /usr/local/lib/python3.10/dist-packages (from cryptography<46.0.0->runpod) (1.16.0)
+2026-02-22T10:21:22.174Z [INFO] #12 7.168 Collecting starlette<1.0.0,>=0.40.0 (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:22.372Z [INFO] #12 7.216   Downloading starlette-0.52.1-py3-none-any.whl.metadata (6.3 kB)
+2026-02-22T10:21:22.506Z [INFO] #12 7.450 Collecting pydantic>=2.7.0 (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:22.763Z [INFO] #12 7.505   Downloading pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+2026-02-22T10:21:22.763Z [INFO] #12 7.509      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 31.0 MB/s eta 0:00:00
+2026-02-22T10:21:22.763Z [INFO] #12 7.513 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.10/dist-packages (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod) (4.15.0)
+2026-02-22T10:21:22.763Z [INFO] #12 7.532 Collecting typing-inspection>=0.4.2 (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:22.763Z [INFO] #12 7.537   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+2026-02-22T10:21:22.763Z [INFO] #12 7.683 Collecting annotated-doc>=0.0.2 (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.055Z [INFO] #12 7.716   Downloading annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+2026-02-22T10:21:23.055Z [INFO] #12 7.777 Collecting fastapi-cli>=0.0.8 (from fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.055Z [INFO] #12 7.788   Downloading fastapi_cli-0.0.23-py3-none-any.whl.metadata (6.4 kB)
+2026-02-22T10:21:23.101Z [INFO] #12 8.096 Collecting httpx<1.0.0,>=0.23.0 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.256Z [INFO] #12 8.100   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2026-02-22T10:21:23.256Z [INFO] #12 8.124 Collecting jinja2>=3.1.5 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.256Z [INFO] #12 8.127   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2026-02-22T10:21:23.256Z [INFO] #12 8.146 Collecting python-multipart>=0.0.18 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.256Z [INFO] #12 8.149   Downloading python_multipart-0.0.22-py3-none-any.whl.metadata (1.8 kB)
+2026-02-22T10:21:23.256Z [INFO] #12 8.167 Collecting itsdangerous>=1.1.0 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.256Z [INFO] #12 8.171   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2026-02-22T10:21:23.256Z [INFO] #12 8.173 Requirement already satisfied: pyyaml>=5.3.1 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod) (6.0.1)
+2026-02-22T10:21:23.256Z [INFO] #12 8.250 Collecting ujson>=5.8.0 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.411Z [INFO] #12 8.255   Downloading ujson-5.11.0-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (9.4 kB)
+2026-02-22T10:21:23.701Z [INFO] #12 8.695 Collecting orjson>=3.9.3 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.813Z [INFO] #12 8.700   Downloading orjson-3.11.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (41 kB)
+2026-02-22T10:21:23.813Z [INFO] #12 8.704      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.0/42.0 kB 15.6 MB/s eta 0:00:00
+2026-02-22T10:21:23.813Z [INFO] #12 8.724 Collecting email-validator>=2.0.0 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.814Z [INFO] #12 8.728   Downloading email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+2026-02-22T10:21:23.814Z [INFO] #12 8.777 Collecting uvicorn>=0.12.0 (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:23.814Z [INFO] #12 8.781   Downloading uvicorn-0.41.0-py3-none-any.whl.metadata (6.7 kB)
+2026-02-22T10:21:23.814Z [INFO] #12 8.808 Collecting pydantic-settings>=2.0.0 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.035Z [INFO] #12 8.812   Downloading pydantic_settings-2.13.1-py3-none-any.whl.metadata (3.4 kB)
+2026-02-22T10:21:24.035Z [INFO] #12 8.832 Collecting pydantic-extra-types>=2.0.0 (from fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.035Z [INFO] #12 8.854   Downloading pydantic_extra_types-2.11.0-py3-none-any.whl.metadata (4.0 kB)
+2026-02-22T10:21:24.037Z [INFO] #12 9.030 Collecting bcrypt>=3.2 (from paramiko>=3.3.1->runpod)
+2026-02-22T10:21:24.276Z [INFO] #12 9.117   Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (10 kB)
+2026-02-22T10:21:24.328Z [INFO] #12 9.322 Collecting invoke>=2.0 (from paramiko>=3.3.1->runpod)
+2026-02-22T10:21:24.503Z [INFO] #12 9.326   Downloading invoke-2.2.1-py3-none-any.whl.metadata (3.3 kB)
+2026-02-22T10:21:24.504Z [INFO] #12 9.358 Collecting pynacl>=1.5 (from paramiko>=3.3.1->runpod)
+2026-02-22T10:21:24.504Z [INFO] #12 9.362   Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (10.0 kB)
+2026-02-22T10:21:24.504Z [INFO] #12 9.371 Requirement already satisfied: wcwidth in /usr/local/lib/python3.10/dist-packages (from prettytable>=3.9.0->runpod) (0.2.9)
+2026-02-22T10:21:24.504Z [INFO] #12 9.384 Requirement already satisfied: tqdm>4.64 in /usr/local/lib/python3.10/dist-packages (from tqdm-loggable>=0.1.4->runpod) (4.67.3)
+2026-02-22T10:21:24.504Z [INFO] #12 9.498 Collecting pycares<6,>=5.0.0 (from aiodns>=3.3.0->aiohttp[speedups]>=3.9.3->runpod)
+2026-02-22T10:21:24.615Z [INFO] #12 9.503   Downloading pycares-5.0.1-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (4.1 kB)
+2026-02-22T10:21:24.615Z [INFO] #12 9.562 Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.10/dist-packages (from botocore<1.43.0,>=1.42.54->boto3>=1.26.165->runpod) (2.8.2)
+2026-02-22T10:21:24.615Z [INFO] #12 9.583 Requirement already satisfied: pycparser in /usr/local/lib/python3.10/dist-packages (from cffi>=1.14->cryptography<46.0.0->runpod) (2.21)
+2026-02-22T10:21:24.615Z [INFO] #12 9.609 Collecting dnspython>=2.0.0 (from email-validator>=2.0.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.715Z [INFO] #12 9.613   Downloading dnspython-2.8.0-py3-none-any.whl.metadata (5.7 kB)
+2026-02-22T10:21:24.715Z [INFO] #12 9.661 Collecting typer>=0.16.0 (from fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.715Z [INFO] #12 9.665   Downloading typer-0.24.1-py3-none-any.whl.metadata (16 kB)
+2026-02-22T10:21:24.715Z [INFO] #12 9.705 Collecting rich-toolkit>=0.14.8 (from fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.715Z [INFO] #12 9.709   Downloading rich_toolkit-0.19.4-py3-none-any.whl.metadata (1.0 kB)
+2026-02-22T10:21:24.831Z [INFO] #12 9.738 Collecting fastapi-cloud-cli>=0.1.1 (from fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.831Z [INFO] #12 9.742   Downloading fastapi_cloud_cli-0.13.0-py3-none-any.whl.metadata (3.3 kB)
+2026-02-22T10:21:24.831Z [INFO] #12 9.763 Requirement already satisfied: anyio in /usr/local/lib/python3.10/dist-packages (from httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod) (4.0.0)
+2026-02-22T10:21:24.832Z [INFO] #12 9.792 Collecting httpcore==1.* (from httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.832Z [INFO] #12 9.796   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-02-22T10:21:24.832Z [INFO] #12 9.825 Collecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:24.932Z [INFO] #12 9.830   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-02-22T10:21:24.932Z [INFO] #12 9.853 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2>=3.1.5->fastapi[all]>=0.94.0->runpod) (2.1.2)
+2026-02-22T10:21:24.932Z [INFO] #12 9.926 Collecting annotated-types>=0.6.0 (from pydantic>=2.7.0->fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:25.087Z [INFO] #12 9.930   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2026-02-22T10:21:26.030Z [INFO] #12 11.02 Collecting pydantic-core==2.41.5 (from pydantic>=2.7.0->fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:26.275Z [INFO] #12 11.03   Downloading pydantic_core-2.41.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+2026-02-22T10:21:26.275Z [INFO] #12 11.11 Collecting python-dotenv>=0.21.0 (from pydantic-settings>=2.0.0->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:26.275Z [INFO] #12 11.12   Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+2026-02-22T10:21:26.278Z [INFO] #12 11.27 Collecting cffi>=1.14 (from cryptography<46.0.0->runpod)
+2026-02-22T10:21:26.433Z [INFO] #12 11.28   Downloading cffi-2.0.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+2026-02-22T10:21:26.638Z [INFO] #12 11.63 Collecting httptools>=0.6.3 (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:26.805Z [INFO] #12 11.64   Downloading httptools-0.7.1-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+2026-02-22T10:21:26.805Z [INFO] #12 11.70 Collecting uvloop>=0.15.1 (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:26.805Z [INFO] #12 11.70   Downloading uvloop-0.22.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (4.9 kB)
+2026-02-22T10:21:26.805Z [INFO] #12 11.80 Collecting watchfiles>=0.20 (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:26.926Z [INFO] #12 11.80   Downloading watchfiles-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+2026-02-22T10:21:26.926Z [INFO] #12 11.92 Collecting websockets>=10.4 (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:27.159Z [INFO] #12 11.92   Downloading websockets-16.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+2026-02-22T10:21:27.160Z [INFO] #12 12.00 Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.10/dist-packages (from anyio->httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod) (1.3.0)
+2026-02-22T10:21:27.160Z [INFO] #12 12.00 Requirement already satisfied: exceptiongroup>=1.0.2 in /usr/local/lib/python3.10/dist-packages (from anyio->httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod) (1.1.3)
+2026-02-22T10:21:27.348Z [INFO] #12 12.34 Collecting rignore>=0.5.1 (from fastapi-cloud-cli>=0.1.1->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:27.459Z [INFO] #12 12.35   Downloading rignore-0.7.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+2026-02-22T10:21:27.459Z [INFO] #12 12.45 Collecting sentry-sdk>=2.20.0 (from fastapi-cloud-cli>=0.1.1->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:27.681Z [INFO] #12 12.46   Downloading sentry_sdk-2.53.0-py2.py3-none-any.whl.metadata (10 kB)
+2026-02-22T10:21:27.924Z [INFO] #12 12.76 Collecting fastar>=0.8.0 (from fastapi-cloud-cli>=0.1.1->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:28.046Z [INFO] #12 12.92   Downloading fastar-0.8.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+2026-02-22T10:21:28.046Z [INFO] #12 13.00 Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.43.0,>=1.42.54->boto3>=1.26.165->runpod) (1.14.0)
+2026-02-22T10:21:28.262Z [INFO] #12 13.12 Collecting rich>=13.7.1 (from rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:28.262Z [INFO] #12 13.12   Downloading rich-14.3.3-py3-none-any.whl.metadata (18 kB)
+2026-02-22T10:21:28.262Z [INFO] #12 13.26 Collecting shellingham>=1.3.0 (from typer>=0.16.0->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:28.420Z [INFO] #12 13.26   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2026-02-22T10:21:28.450Z [INFO] #12 13.44 Collecting markdown-it-py>=2.2.0 (from rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:28.608Z [INFO] #12 13.45   Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-02-22T10:21:28.608Z [INFO] #12 13.45 Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.10/dist-packages (from rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod) (2.16.1)
+2026-02-22T10:21:28.624Z [INFO] #12 13.62 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod)
+2026-02-22T10:21:28.726Z [INFO] #12 13.62   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-02-22T10:21:28.726Z [INFO] #12 13.67 Downloading runpod-1.8.1-py3-none-any.whl (157 kB)
+2026-02-22T10:21:28.726Z [INFO] #12 13.68    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.5/157.5 kB 58.8 MB/s eta 0:00:00
+2026-02-22T10:21:28.726Z [INFO] #12 13.68 Downloading InquirerPy-0.3.4-py3-none-any.whl (67 kB)
+2026-02-22T10:21:28.726Z [INFO] #12 13.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.7/67.7 kB 30.6 MB/s eta 0:00:00
+2026-02-22T10:21:28.726Z [INFO] #12 13.69 Downloading aiohttp-3.13.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+2026-02-22T10:21:28.727Z [INFO] #12 13.70    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 133.3 MB/s eta 0:00:00
+2026-02-22T10:21:28.727Z [INFO] #12 13.71 Downloading aiohttp_retry-2.9.1-py3-none-any.whl (10.0 kB)
+2026-02-22T10:21:28.727Z [INFO] #12 13.71 Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+2026-02-22T10:21:28.727Z [INFO] #12 13.72 Downloading boto3-1.42.54-py3-none-any.whl (140 kB)
+2026-02-22T10:21:28.826Z [INFO] #12 13.72    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.6/140.6 kB 64.0 MB/s eta 0:00:00
+2026-02-22T10:21:28.826Z [INFO] #12 13.73 Downloading click-8.3.1-py3-none-any.whl (108 kB)
+2026-02-22T10:21:28.826Z [INFO] #12 13.73    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.3/108.3 kB 46.7 MB/s eta 0:00:00
+2026-02-22T10:21:28.826Z [INFO] #12 13.74 Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2026-02-22T10:21:28.826Z [INFO] #12 13.74 Downloading cryptography-45.0.7-cp37-abi3-manylinux_2_28_x86_64.whl (4.5 MB)
+2026-02-22T10:21:28.827Z [INFO] #12 13.77    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 180.7 MB/s eta 0:00:00
+2026-02-22T10:21:28.827Z [INFO] #12 13.78 Downloading fastapi-0.129.2-py3-none-any.whl (103 kB)
+2026-02-22T10:21:28.827Z [INFO] #12 13.78    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 kB 45.9 MB/s eta 0:00:00
+2026-02-22T10:21:28.827Z [INFO] #12 13.78 Downloading paramiko-4.0.0-py3-none-any.whl (223 kB)
+2026-02-22T10:21:28.827Z [INFO] #12 13.79    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.9/223.9 kB 77.3 MB/s eta 0:00:00
+2026-02-22T10:21:28.827Z [INFO] #12 13.79 Downloading prettytable-3.17.0-py3-none-any.whl (34 kB)
+2026-02-22T10:21:28.827Z [INFO] #12 13.80 Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+2026-02-22T10:21:28.827Z [INFO] #12 13.80 Downloading tomlkit-0.14.0-py3-none-any.whl (39 kB)
+2026-02-22T10:21:28.827Z [INFO] #12 13.81 Downloading tqdm_loggable-0.3-py3-none-any.whl (9.4 kB)
+2026-02-22T10:21:28.827Z [INFO] #12 13.82 Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+2026-02-22T10:21:28.964Z [INFO] #12 13.82    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.6/131.6 kB 59.6 MB/s eta 0:00:00
+2026-02-22T10:21:28.964Z [INFO] #12 13.82 Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+2026-02-22T10:21:28.964Z [INFO] #12 13.83    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.1/79.1 kB 37.1 MB/s eta 0:00:00
+2026-02-22T10:21:28.964Z [INFO] #12 13.83 Downloading aiodns-4.0.0-py3-none-any.whl (11 kB)
+2026-02-22T10:21:28.964Z [INFO] #12 13.84 Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+2026-02-22T10:21:28.964Z [INFO] #12 13.84 Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+2026-02-22T10:21:28.964Z [INFO] #12 13.85 Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+2026-02-22T10:21:28.965Z [INFO] #12 13.86 Downloading async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+2026-02-22T10:21:28.965Z [INFO] #12 13.86 Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_28_x86_64.whl (278 kB)
+2026-02-22T10:21:28.965Z [INFO] #12 13.87    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 278.7/278.7 kB 99.3 MB/s eta 0:00:00
+2026-02-22T10:21:28.965Z [INFO] #12 13.87 Downloading botocore-1.42.54-py3-none-any.whl (14.6 MB)
+2026-02-22T10:21:28.965Z [INFO] #12 13.96    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.6/14.6 MB 154.5 MB/s eta 0:00:00
+2026-02-22T10:21:29.066Z [INFO] #12 13.96 Downloading brotli-1.2.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2026-02-22T10:21:29.066Z [INFO] #12 13.97    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 156.5 MB/s eta 0:00:00
+2026-02-22T10:21:29.066Z [INFO] #12 13.98 Downloading email_validator-2.3.0-py3-none-any.whl (35 kB)
+2026-02-22T10:21:29.066Z [INFO] #12 13.98 Downloading fastapi_cli-0.0.23-py3-none-any.whl (12 kB)
+2026-02-22T10:21:29.066Z [INFO] #12 13.99 Downloading frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (219 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.5/219.5 kB 62.7 MB/s eta 0:00:00
+2026-02-22T10:21:29.067Z [INFO] #12 14.00 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 37.2 MB/s eta 0:00:00
+2026-02-22T10:21:29.067Z [INFO] #12 14.01 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.01    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 38.5 MB/s eta 0:00:00
+2026-02-22T10:21:29.067Z [INFO] #12 14.02 Downloading invoke-2.2.1-py3-none-any.whl (160 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.02    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.3/160.3 kB 73.7 MB/s eta 0:00:00
+2026-02-22T10:21:29.067Z [INFO] #12 14.02 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.03 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.03    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 63.4 MB/s eta 0:00:00
+2026-02-22T10:21:29.067Z [INFO] #12 14.04 Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.04 Downloading multidict-6.7.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (243 kB)
+2026-02-22T10:21:29.067Z [INFO] #12 14.05    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.3/243.3 kB 67.2 MB/s eta 0:00:00
+2026-02-22T10:21:29.067Z [INFO] #12 14.05 Downloading orjson-3.11.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (133 kB)
+2026-02-22T10:21:29.068Z [INFO] #12 14.06    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.7/133.7 kB 62.8 MB/s eta 0:00:00
+2026-02-22T10:21:29.068Z [INFO] #12 14.06 Downloading pfzy-0.3.4-py3-none-any.whl (8.5 kB)
+2026-02-22T10:21:29.167Z [INFO] #12 14.07 Downloading propcache-0.4.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (196 kB)
+2026-02-22T10:21:29.167Z [INFO] #12 14.07    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.9/196.9 kB 80.9 MB/s eta 0:00:00
+2026-02-22T10:21:29.167Z [INFO] #12 14.07 Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+2026-02-22T10:21:29.168Z [INFO] #12 14.08    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 463.6/463.6 kB 123.2 MB/s eta 0:00:00
+2026-02-22T10:21:29.168Z [INFO] #12 14.08 Downloading pydantic_core-2.41.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+2026-02-22T10:21:29.168Z [INFO] #12 14.10    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 147.7 MB/s eta 0:00:00
+2026-02-22T10:21:29.168Z [INFO] #12 14.10 Downloading pydantic_extra_types-2.11.0-py3-none-any.whl (74 kB)
+2026-02-22T10:21:29.168Z [INFO] #12 14.11    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.3/74.3 kB 39.7 MB/s eta 0:00:00
+2026-02-22T10:21:29.168Z [INFO] #12 14.11 Downloading pydantic_settings-2.13.1-py3-none-any.whl (58 kB)
+2026-02-22T10:21:29.168Z [INFO] #12 14.12    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.9/58.9 kB 30.5 MB/s eta 0:00:00
+2026-02-22T10:21:29.168Z [INFO] #12 14.12 Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (1.4 MB)
+2026-02-22T10:21:29.168Z [INFO] #12 14.13    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 154.4 MB/s eta 0:00:00
+2026-02-22T10:21:29.169Z [INFO] #12 14.14 Downloading cffi-2.0.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (216 kB)
+2026-02-22T10:21:29.169Z [INFO] #12 14.14    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.5/216.5 kB 77.0 MB/s eta 0:00:00
+2026-02-22T10:21:29.169Z [INFO] #12 14.15 Downloading python_multipart-0.0.22-py3-none-any.whl (24 kB)
+2026-02-22T10:21:29.169Z [INFO] #12 14.15 Downloading s3transfer-0.16.0-py3-none-any.whl (86 kB)
+2026-02-22T10:21:29.169Z [INFO] #12 14.15    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.8/86.8 kB 44.2 MB/s eta 0:00:00
+2026-02-22T10:21:29.169Z [INFO] #12 14.16 Downloading starlette-0.52.1-py3-none-any.whl (74 kB)
+2026-02-22T10:21:29.279Z [INFO] #12 14.16    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.3/74.3 kB 37.4 MB/s eta 0:00:00
+2026-02-22T10:21:29.279Z [INFO] #12 14.17 Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+2026-02-22T10:21:29.279Z [INFO] #12 14.17 Downloading ujson-5.11.0-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (57 kB)
+2026-02-22T10:21:29.279Z [INFO] #12 14.18    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.3/57.3 kB 16.6 MB/s eta 0:00:00
+2026-02-22T10:21:29.279Z [INFO] #12 14.18 Downloading uvicorn-0.41.0-py3-none-any.whl (68 kB)
+2026-02-22T10:21:29.279Z [INFO] #12 14.18    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.8/68.8 kB 33.3 MB/s eta 0:00:00
+2026-02-22T10:21:29.279Z [INFO] #12 14.19 Downloading yarl-1.22.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (346 kB)
+2026-02-22T10:21:29.279Z [INFO] #12 14.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.0/347.0 kB 102.5 MB/s eta 0:00:00
+2026-02-22T10:21:29.279Z [INFO] #12 14.20 Downloading backports_zstd-1.3.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (491 kB)
+2026-02-22T10:21:29.279Z [INFO] #12 14.20    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 491.1/491.1 kB 125.0 MB/s eta 0:00:00
+2026-02-22T10:21:29.280Z [INFO] #12 14.21 Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2026-02-22T10:21:29.280Z [INFO] #12 14.22 Downloading dnspython-2.8.0-py3-none-any.whl (331 kB)
+2026-02-22T10:21:29.280Z [INFO] #12 14.22    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 331.1/331.1 kB 101.2 MB/s eta 0:00:00
+2026-02-22T10:21:29.280Z [INFO] #12 14.23 Downloading fastapi_cloud_cli-0.13.0-py3-none-any.whl (27 kB)
+2026-02-22T10:21:29.280Z [INFO] #12 14.23 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-02-22T10:21:29.280Z [INFO] #12 14.24 Downloading httptools-0.7.1-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (440 kB)
+2026-02-22T10:21:29.280Z [INFO] #12 14.24    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 440.9/440.9 kB 121.2 MB/s eta 0:00:00
+2026-02-22T10:21:29.280Z [INFO] #12 14.25 Downloading pycares-5.0.1-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (222 kB)
+2026-02-22T10:21:29.280Z [INFO] #12 14.25    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 222.9/222.9 kB 88.1 MB/s eta 0:00:00
+2026-02-22T10:21:29.280Z [INFO] #12 14.26 Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+2026-02-22T10:21:29.281Z [INFO] #12 14.27 Downloading rich_toolkit-0.19.4-py3-none-any.whl (32 kB)
+2026-02-22T10:21:29.465Z [INFO] #12 14.28 Downloading typer-0.24.1-py3-none-any.whl (56 kB)
+2026-02-22T10:21:29.465Z [INFO] #12 14.28    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.1/56.1 kB 27.1 MB/s eta 0:00:00
+2026-02-22T10:21:29.465Z [INFO] #12 14.29 Downloading uvloop-0.22.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.7 MB)
+2026-02-22T10:21:29.465Z [INFO] #12 14.32    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 137.2 MB/s eta 0:00:00
+2026-02-22T10:21:29.465Z [INFO] #12 14.32 Downloading watchfiles-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (455 kB)
+2026-02-22T10:21:29.658Z [INFO] #12 14.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 455.6/455.6 kB 4.7 MB/s eta 0:00:00
+2026-02-22T10:21:29.658Z [INFO] #12 14.46 Downloading websockets-16.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (183 kB)
+2026-02-22T10:21:29.658Z [INFO] #12 14.47    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 183.8/183.8 kB 59.8 MB/s eta 0:00:00
+2026-02-22T10:21:29.658Z [INFO] #12 14.47 Downloading fastar-0.8.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (821 kB)
+2026-02-22T10:21:29.888Z [INFO] #12 14.67    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 821.3/821.3 kB 4.9 MB/s eta 0:00:00
+2026-02-22T10:21:29.888Z [INFO] #12 14.67 Downloading rich-14.3.3-py3-none-any.whl (310 kB)
+2026-02-22T10:21:29.888Z [INFO] #12 14.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.5/310.5 kB 19.7 MB/s eta 0:00:00
+2026-02-22T10:21:29.888Z [INFO] #12 14.70 Downloading rignore-0.7.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (959 kB)
+2026-02-22T10:21:29.888Z [INFO] #12 14.70    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 959.8/959.8 kB 147.3 MB/s eta 0:00:00
+2026-02-22T10:21:29.888Z [INFO] #12 14.71 Downloading sentry_sdk-2.53.0-py2.py3-none-any.whl (437 kB)
+2026-02-22T10:21:29.888Z [INFO] #12 14.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 437.9/437.9 kB 124.9 MB/s eta 0:00:00
+2026-02-22T10:21:29.888Z [INFO] #12 14.72 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-02-22T10:21:29.888Z [INFO] #12 14.72 Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+2026-02-22T10:21:29.888Z [INFO] #12 14.73    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 44.4 MB/s eta 0:00:00
+2026-02-22T10:21:29.888Z [INFO] #12 14.73 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-02-22T10:21:30.923Z [INFO] #12 15.92 Installing collected packages: py-cpuinfo, Brotli, websockets, watchdog, uvloop, urllib3, ujson, typing-inspection, tqdm-loggable, tomlkit, shellingham, rignore, python-multipart, python-dotenv, pydantic-core, propcache, prettytable, pfzy, orjson, multidict, mdurl, jmespath, jinja2, itsdangerous, invoke, httptools, h11, frozenlist, fastar, dnspython, colorama, click, cffi, bcrypt, backports.zstd, backoff, async-timeout, annotated-types, annotated-doc, aiohappyeyeballs, yarl, watchfiles, uvicorn, starlette, sentry-sdk, pynacl, pydantic, pycares, markdown-it-py, inquirerpy, httpcore, email-validator, cryptography, botocore, aiosignal, s3transfer, rich, pydantic-settings, pydantic-extra-types, paramiko, httpx, fastapi, aiohttp, aiodns, typer, rich-toolkit, boto3, aiohttp-retry, fastapi-cloud-cli, fastapi-cli, runpod
+2026-02-22T10:21:31.151Z [INFO] #12 16.15   Attempting uninstall: urllib3
+2026-02-22T10:21:31.331Z [INFO] #12 16.15     Found existing installation: urllib3 1.25.8
+2026-02-22T10:21:31.331Z [INFO] #12 16.15     Uninstalling urllib3-1.25.8:
+2026-02-22T10:21:31.331Z [INFO] #12 16.17       Successfully uninstalled urllib3-1.25.8
+2026-02-22T10:21:31.457Z [INFO] #12 16.45   Attempting uninstall: jinja2
+2026-02-22T10:21:31.645Z [INFO] #12 16.45     Found existing installation: Jinja2 3.1.2
+2026-02-22T10:21:31.645Z [INFO] #12 16.46     Uninstalling Jinja2-3.1.2:
+2026-02-22T10:21:31.645Z [INFO] #12 16.47       Successfully uninstalled Jinja2-3.1.2
+2026-02-22T10:21:32.536Z [INFO] #12 17.53   Attempting uninstall: cffi
+2026-02-22T10:21:32.690Z [INFO] #12 17.53     Found existing installation: cffi 1.16.0
+2026-02-22T10:21:32.690Z [INFO] #12 17.53     Uninstalling cffi-1.16.0:
+2026-02-22T10:21:32.769Z [INFO] #12 17.76       Successfully uninstalled cffi-1.16.0
+2026-02-22T10:21:35.561Z [INFO] #12 20.55 Successfully installed Brotli-1.2.0 aiodns-4.0.0 aiohappyeyeballs-2.6.1 aiohttp-3.13.3 aiohttp-retry-2.9.1 aiosignal-1.4.0 annotated-doc-0.0.4 annotated-types-0.7.0 async-timeout-5.0.1 backoff-2.2.1 backports.zstd-1.3.0 bcrypt-5.0.0 boto3-1.42.54 botocore-1.42.54 cffi-2.0.0 click-8.3.1 colorama-0.4.6 cryptography-45.0.7 dnspython-2.8.0 email-validator-2.3.0 fastapi-0.129.2 fastapi-cli-0.0.23 fastapi-cloud-cli-0.13.0 fastar-0.8.0 frozenlist-1.8.0 h11-0.16.0 httpcore-1.0.9 httptools-0.7.1 httpx-0.28.1 inquirerpy-0.3.4 invoke-2.2.1 itsdangerous-2.2.0 jinja2-3.1.6 jmespath-1.1.0 markdown-it-py-4.0.0 mdurl-0.1.2 multidict-6.7.1 orjson-3.11.7 paramiko-4.0.0 pfzy-0.3.4 prettytable-3.17.0 propcache-0.4.1 py-cpuinfo-9.0.0 pycares-5.0.1 pydantic-2.12.5 pydantic-core-2.41.5 pydantic-extra-types-2.11.0 pydantic-settings-2.13.1 pynacl-1.6.2 python-dotenv-1.2.1 python-multipart-0.0.22 rich-14.3.3 rich-toolkit-0.19.4 rignore-0.7.6 runpod-1.8.1 s3transfer-0.16.0 sentry-sdk-2.53.0 shellingham-1.5.4 starlette-0.52.1 tomlkit-0.14.0 tqdm-loggable-0.3 typer-0.24.1 typing-inspection-0.4.2 ujson-5.11.0 urllib3-2.6.3 uvicorn-0.41.0 uvloop-0.22.1 watchdog-6.0.0 watchfiles-1.1.1 websockets-16.0 yarl-1.22.0
+2026-02-22T10:21:35.713Z [INFO] #12 20.55 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2026-02-22T10:21:35.714Z [INFO] #12 20.56
+2026-02-22T10:21:35.714Z [INFO] #12 20.56 [notice] A new release of pip is available: 23.3.1 -> 26.0.1
+2026-02-22T10:21:35.714Z [INFO] #12 20.56 [notice] To update, run: python -m pip install --upgrade pip
+2026-02-22T10:21:37.895Z [INFO] #12 DONE 22.9s
+2026-02-22T10:21:38.046Z [INFO] #13 [ 6/10] RUN mkdir -p /workspace/weights &&     wget -q https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth     -O /workspace/weights/realesr-animevideov3.pth
+2026-02-22T10:21:38.848Z [INFO] #13 DONE 1.0s
+2026-02-22T10:21:39.057Z [INFO] #14 [ 7/10] WORKDIR /app
+2026-02-22T10:21:39.058Z [INFO] #14 DONE 0.0s
+2026-02-22T10:21:39.058Z [INFO] #15 [ 8/10] COPY requirements.txt .
+2026-02-22T10:21:39.058Z [INFO] #15 DONE 0.0s
+2026-02-22T10:21:39.058Z [INFO] #16 [ 9/10] RUN pip install --no-cache-dir -r requirements.txt
+2026-02-22T10:21:39.704Z [INFO] #16 0.798 Requirement already satisfied: runpod>=1.6.0 in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 1)) (1.8.1)
+2026-02-22T10:21:39.810Z [INFO] #16 0.810 Requirement already satisfied: aiohttp>=3.9.3 in /usr/local/lib/python3.10/dist-packages (from aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (3.13.3)
+2026-02-22T10:21:39.810Z [INFO] #16 0.811 Requirement already satisfied: aiohttp-retry>=2.8.3 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (2.9.1)
+2026-02-22T10:21:39.810Z [INFO] #16 0.811 Requirement already satisfied: backoff>=2.2.1 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (2.2.1)
+2026-02-22T10:21:39.811Z [INFO] #16 0.812 Requirement already satisfied: boto3>=1.26.165 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (1.42.54)
+2026-02-22T10:21:39.811Z [INFO] #16 0.813 Requirement already satisfied: click>=8.1.7 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (8.3.1)
+2026-02-22T10:21:39.811Z [INFO] #16 0.813 Requirement already satisfied: colorama<0.4.7,>=0.2.5 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (0.4.6)
+2026-02-22T10:21:39.811Z [INFO] #16 0.814 Requirement already satisfied: cryptography<46.0.0 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (45.0.7)
+2026-02-22T10:21:39.811Z [INFO] #16 0.814 Requirement already satisfied: fastapi>=0.94.0 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.129.2)
+2026-02-22T10:21:39.811Z [INFO] #16 0.816 Requirement already satisfied: filelock>=3.0.0 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (3.9.0)
+2026-02-22T10:21:39.811Z [INFO] #16 0.816 Requirement already satisfied: paramiko>=3.3.1 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (4.0.0)
+2026-02-22T10:21:39.811Z [INFO] #16 0.817 Requirement already satisfied: prettytable>=3.9.0 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (3.17.0)
+2026-02-22T10:21:39.811Z [INFO] #16 0.817 Requirement already satisfied: py-cpuinfo>=9.0.0 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (9.0.0)
+2026-02-22T10:21:39.811Z [INFO] #16 0.818 Requirement already satisfied: inquirerpy==0.3.4 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (0.3.4)
+2026-02-22T10:21:39.811Z [INFO] #16 0.818 Requirement already satisfied: requests>=2.31.0 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (2.31.0)
+2026-02-22T10:21:39.811Z [INFO] #16 0.819 Requirement already satisfied: tomli>=2.0.1 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (2.0.1)
+2026-02-22T10:21:39.811Z [INFO] #16 0.820 Requirement already satisfied: tomlkit>=0.12.2 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (0.14.0)
+2026-02-22T10:21:39.811Z [INFO] #16 0.820 Requirement already satisfied: tqdm-loggable>=0.1.4 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (0.3)
+2026-02-22T10:21:39.811Z [INFO] #16 0.821 Requirement already satisfied: urllib3>=1.26.6 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (2.6.3)
+2026-02-22T10:21:39.811Z [INFO] #16 0.821 Requirement already satisfied: watchdog>=3.0.0 in /usr/local/lib/python3.10/dist-packages (from runpod>=1.6.0->-r requirements.txt (line 1)) (6.0.0)
+2026-02-22T10:21:39.811Z [INFO] #16 0.828 Requirement already satisfied: pfzy<0.4.0,>=0.3.1 in /usr/local/lib/python3.10/dist-packages (from inquirerpy==0.3.4->runpod>=1.6.0->-r requirements.txt (line 1)) (0.3.4)
+2026-02-22T10:21:39.811Z [INFO] #16 0.828 Requirement already satisfied: prompt-toolkit<4.0.0,>=3.0.1 in /usr/local/lib/python3.10/dist-packages (from inquirerpy==0.3.4->runpod>=1.6.0->-r requirements.txt (line 1)) (3.0.39)
+2026-02-22T10:21:39.811Z [INFO] #16 0.838 Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (2.6.1)
+2026-02-22T10:21:39.811Z [INFO] #16 0.839 Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (1.4.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.840 Requirement already satisfied: async-timeout<6.0,>=4.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (5.0.1)
+2026-02-22T10:21:39.812Z [INFO] #16 0.841 Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (23.1.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.841 Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (1.8.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.842 Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (6.7.1)
+2026-02-22T10:21:39.812Z [INFO] #16 0.842 Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (0.4.1)
+2026-02-22T10:21:39.812Z [INFO] #16 0.843 Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp>=3.9.3->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (1.22.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.849 Requirement already satisfied: aiodns>=3.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (4.0.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.850 Requirement already satisfied: Brotli>=1.2 in /usr/local/lib/python3.10/dist-packages (from aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (1.2.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.852 Requirement already satisfied: backports.zstd in /usr/local/lib/python3.10/dist-packages (from aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (1.3.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.857 Requirement already satisfied: botocore<1.43.0,>=1.42.54 in /usr/local/lib/python3.10/dist-packages (from boto3>=1.26.165->runpod>=1.6.0->-r requirements.txt (line 1)) (1.42.54)
+2026-02-22T10:21:39.812Z [INFO] #16 0.858 Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /usr/local/lib/python3.10/dist-packages (from boto3>=1.26.165->runpod>=1.6.0->-r requirements.txt (line 1)) (1.1.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.858 Requirement already satisfied: s3transfer<0.17.0,>=0.16.0 in /usr/local/lib/python3.10/dist-packages (from boto3>=1.26.165->runpod>=1.6.0->-r requirements.txt (line 1)) (0.16.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.881 Requirement already satisfied: cffi>=1.14 in /usr/local/lib/python3.10/dist-packages (from cryptography<46.0.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.0.0)
+2026-02-22T10:21:39.812Z [INFO] #16 0.904 Requirement already satisfied: starlette<1.0.0,>=0.40.0 in /usr/local/lib/python3.10/dist-packages (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.52.1)
+2026-02-22T10:21:39.919Z [INFO] #16 0.904 Requirement already satisfied: pydantic>=2.7.0 in /usr/local/lib/python3.10/dist-packages (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.12.5)
+2026-02-22T10:21:39.919Z [INFO] #16 0.906 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.10/dist-packages (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (4.15.0)
+2026-02-22T10:21:39.920Z [INFO] #16 0.906 Requirement already satisfied: typing-inspection>=0.4.2 in /usr/local/lib/python3.10/dist-packages (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.4.2)
+2026-02-22T10:21:39.920Z [INFO] #16 0.907 Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.10/dist-packages (from fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.0.4)
+2026-02-22T10:21:39.920Z [INFO] #16 0.918 Requirement already satisfied: fastapi-cli>=0.0.8 in /usr/local/lib/python3.10/dist-packages (from fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.0.23)
+2026-02-22T10:21:39.920Z [INFO] #16 0.920 Requirement already satisfied: httpx<1.0.0,>=0.23.0 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.28.1)
+2026-02-22T10:21:39.920Z [INFO] #16 0.921 Requirement already satisfied: jinja2>=3.1.5 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (3.1.6)
+2026-02-22T10:21:39.920Z [INFO] #16 0.922 Requirement already satisfied: python-multipart>=0.0.18 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.0.22)
+2026-02-22T10:21:39.920Z [INFO] #16 0.923 Requirement already satisfied: itsdangerous>=1.1.0 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.2.0)
+2026-02-22T10:21:39.920Z [INFO] #16 0.924 Requirement already satisfied: pyyaml>=5.3.1 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (6.0.1)
+2026-02-22T10:21:39.920Z [INFO] #16 0.925 Requirement already satisfied: ujson>=5.8.0 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (5.11.0)
+2026-02-22T10:21:39.920Z [INFO] #16 0.926 Requirement already satisfied: orjson>=3.9.3 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (3.11.7)
+2026-02-22T10:21:39.921Z [INFO] #16 0.927 Requirement already satisfied: email-validator>=2.0.0 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.3.0)
+2026-02-22T10:21:39.921Z [INFO] #16 0.928 Requirement already satisfied: uvicorn>=0.12.0 in /usr/local/lib/python3.10/dist-packages (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.41.0)
+2026-02-22T10:21:39.921Z [INFO] #16 0.930 Requirement already satisfied: pydantic-settings>=2.0.0 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.13.1)
+2026-02-22T10:21:39.921Z [INFO] #16 0.931 Requirement already satisfied: pydantic-extra-types>=2.0.0 in /usr/local/lib/python3.10/dist-packages (from fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.11.0)
+2026-02-22T10:21:39.921Z [INFO] #16 0.943 Requirement already satisfied: bcrypt>=3.2 in /usr/local/lib/python3.10/dist-packages (from paramiko>=3.3.1->runpod>=1.6.0->-r requirements.txt (line 1)) (5.0.0)
+2026-02-22T10:21:39.921Z [INFO] #16 0.944 Requirement already satisfied: invoke>=2.0 in /usr/local/lib/python3.10/dist-packages (from paramiko>=3.3.1->runpod>=1.6.0->-r requirements.txt (line 1)) (2.2.1)
+2026-02-22T10:21:39.921Z [INFO] #16 0.945 Requirement already satisfied: pynacl>=1.5 in /usr/local/lib/python3.10/dist-packages (from paramiko>=3.3.1->runpod>=1.6.0->-r requirements.txt (line 1)) (1.6.2)
+2026-02-22T10:21:39.921Z [INFO] #16 0.949 Requirement already satisfied: wcwidth in /usr/local/lib/python3.10/dist-packages (from prettytable>=3.9.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.2.9)
+2026-02-22T10:21:39.921Z [INFO] #16 0.956 Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests>=2.31.0->runpod>=1.6.0->-r requirements.txt (line 1)) (3.3.2)
+2026-02-22T10:21:39.921Z [INFO] #16 0.957 Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3/dist-packages (from requests>=2.31.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.8)
+2026-02-22T10:21:39.921Z [INFO] #16 0.958 Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests>=2.31.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2019.11.28)
+2026-02-22T10:21:39.921Z [INFO] #16 0.964 Requirement already satisfied: tqdm>4.64 in /usr/local/lib/python3.10/dist-packages (from tqdm-loggable>=0.1.4->runpod>=1.6.0->-r requirements.txt (line 1)) (4.67.3)
+2026-02-22T10:21:39.922Z [INFO] #16 0.976 Requirement already satisfied: pycares<6,>=5.0.0 in /usr/local/lib/python3.10/dist-packages (from aiodns>=3.3.0->aiohttp[speedups]>=3.9.3->runpod>=1.6.0->-r requirements.txt (line 1)) (5.0.1)
+2026-02-22T10:21:39.922Z [INFO] #16 1.013 Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.10/dist-packages (from botocore<1.43.0,>=1.42.54->boto3>=1.26.165->runpod>=1.6.0->-r requirements.txt (line 1)) (2.8.2)
+2026-02-22T10:21:40.050Z [INFO] #16 1.023 Requirement already satisfied: pycparser in /usr/local/lib/python3.10/dist-packages (from cffi>=1.14->cryptography<46.0.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.21)
+2026-02-22T10:21:40.050Z [INFO] #16 1.031 Requirement already satisfied: dnspython>=2.0.0 in /usr/local/lib/python3.10/dist-packages (from email-validator>=2.0.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.8.0)
+2026-02-22T10:21:40.050Z [INFO] #16 1.041 Requirement already satisfied: typer>=0.16.0 in /usr/local/lib/python3.10/dist-packages (from fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.24.1)
+2026-02-22T10:21:40.050Z [INFO] #16 1.042 Requirement already satisfied: rich-toolkit>=0.14.8 in /usr/local/lib/python3.10/dist-packages (from fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.19.4)
+2026-02-22T10:21:40.050Z [INFO] #16 1.049 Requirement already satisfied: fastapi-cloud-cli>=0.1.1 in /usr/local/lib/python3.10/dist-packages (from fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.13.0)
+2026-02-22T10:21:40.050Z [INFO] #16 1.081 Requirement already satisfied: anyio in /usr/local/lib/python3.10/dist-packages (from httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (4.0.0)
+2026-02-22T10:21:40.050Z [INFO] #16 1.082 Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.10/dist-packages (from httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (1.0.9)
+2026-02-22T10:21:40.050Z [INFO] #16 1.090 Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.10/dist-packages (from httpcore==1.*->httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.16.0)
+2026-02-22T10:21:40.050Z [INFO] #16 1.105 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2>=3.1.5->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.1.2)
+2026-02-22T10:21:40.050Z [INFO] #16 1.143 Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.10/dist-packages (from pydantic>=2.7.0->fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.7.0)
+2026-02-22T10:21:40.216Z [INFO] #16 1.144 Requirement already satisfied: pydantic-core==2.41.5 in /usr/local/lib/python3.10/dist-packages (from pydantic>=2.7.0->fastapi>=0.94.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.41.5)
+2026-02-22T10:21:40.216Z [INFO] #16 1.180 Requirement already satisfied: python-dotenv>=0.21.0 in /usr/local/lib/python3.10/dist-packages (from pydantic-settings>=2.0.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (1.2.1)
+2026-02-22T10:21:40.216Z [INFO] #16 1.309 Requirement already satisfied: httptools>=0.6.3 in /usr/local/lib/python3.10/dist-packages (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.7.1)
+2026-02-22T10:21:40.216Z [INFO] #16 1.309 Requirement already satisfied: uvloop>=0.15.1 in /usr/local/lib/python3.10/dist-packages (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.22.1)
+2026-02-22T10:21:40.216Z [INFO] #16 1.309 Requirement already satisfied: watchfiles>=0.20 in /usr/local/lib/python3.10/dist-packages (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (1.1.1)
+2026-02-22T10:21:40.216Z [INFO] #16 1.309 Requirement already satisfied: websockets>=10.4 in /usr/local/lib/python3.10/dist-packages (from uvicorn[standard]>=0.12.0; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (16.0)
+2026-02-22T10:21:40.331Z [INFO] #16 1.405 Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.10/dist-packages (from anyio->httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (1.3.0)
+2026-02-22T10:21:40.331Z [INFO] #16 1.405 Requirement already satisfied: exceptiongroup>=1.0.2 in /usr/local/lib/python3.10/dist-packages (from anyio->httpx<1.0.0,>=0.23.0->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (1.1.3)
+2026-02-22T10:21:40.331Z [INFO] #16 1.405 Requirement already satisfied: rignore>=0.5.1 in /usr/local/lib/python3.10/dist-packages (from fastapi-cloud-cli>=0.1.1->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.7.6)
+2026-02-22T10:21:40.331Z [INFO] #16 1.405 Requirement already satisfied: sentry-sdk>=2.20.0 in /usr/local/lib/python3.10/dist-packages (from fastapi-cloud-cli>=0.1.1->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.53.0)
+2026-02-22T10:21:40.331Z [INFO] #16 1.405 Requirement already satisfied: fastar>=0.8.0 in /usr/local/lib/python3.10/dist-packages (from fastapi-cloud-cli>=0.1.1->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.8.0)
+2026-02-22T10:21:40.331Z [INFO] #16 1.405 Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.43.0,>=1.42.54->boto3>=1.26.165->runpod>=1.6.0->-r requirements.txt (line 1)) (1.14.0)
+2026-02-22T10:21:40.331Z [INFO] #16 1.423 Requirement already satisfied: rich>=13.7.1 in /usr/local/lib/python3.10/dist-packages (from rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (14.3.3)
+2026-02-22T10:21:40.533Z [INFO] #16 1.437 Requirement already satisfied: shellingham>=1.3.0 in /usr/local/lib/python3.10/dist-packages (from typer>=0.16.0->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (1.5.4)
+2026-02-22T10:21:40.533Z [INFO] #16 1.514 Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.10/dist-packages (from rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (4.0.0)
+2026-02-22T10:21:40.533Z [INFO] #16 1.515 Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.10/dist-packages (from rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (2.16.1)
+2026-02-22T10:21:40.533Z [INFO] #16 1.627 Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.10/dist-packages (from markdown-it-py>=2.2.0->rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.8->fastapi-cli[standard]>=0.0.8; extra == "all"->fastapi[all]>=0.94.0->runpod>=1.6.0->-r requirements.txt (line 1)) (0.1.2)
+2026-02-22T10:21:41.314Z [INFO] #16 2.407 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2026-02-22T10:21:41.509Z [INFO] #16 2.602
+2026-02-22T10:21:41.509Z [INFO] #16 2.602 [notice] A new release of pip is available: 23.3.1 -> 26.0.1
+2026-02-22T10:21:41.509Z [INFO] #16 2.602 [notice] To update, run: python -m pip install --upgrade pip
+2026-02-22T10:21:41.860Z [INFO] #16 DONE 3.0s
+2026-02-22T10:21:42.034Z [INFO] #17 [10/10] COPY handler.py .
+2026-02-22T10:21:42.034Z [INFO] #17 DONE 0.0s
+2026-02-22T10:21:42.035Z [INFO] #18 exporting to oci image format. This takes a little bit of time. Please be patient.
+2026-02-22T10:21:42.035Z [INFO] #18 exporting layers
+2026-02-22T10:22:12.830Z [INFO] #18 exporting layers 30.9s done
+2026-02-22T10:22:12.991Z [INFO] #18 exporting manifest sha256:2213867ce7be31638dfe67f285136ab493819ca2f4fc4bd35ca46d4eb01aebd0 done
+2026-02-22T10:22:12.991Z [INFO] #18 exporting config sha256:26f6c810c5bf5ed02e3f2fa0be787384bb95339c666477955bc4f886d708d8b2 done
+2026-02-22T10:22:12.991Z [INFO] #18 sending tarball
+2026-02-22T10:23:06.142Z [INFO] #18 sending tarball 53.3s done
+2026-02-22T10:23:06.142Z [INFO] #18 DONE 84.3s
+2026-02-22T10:23:06.142Z [INFO] #19 exporting cache to client directory
+2026-02-22T10:23:06.142Z [INFO] #19 preparing build cache for export
+2026-02-22T10:23:06.261Z [INFO] #19 writing layer sha256:13aad136a4585aedc730f4f571a8107239e7e3f57b9d6dda3c6eaa8b125044d3 done
+2026-02-22T10:23:06.261Z [INFO] #19 writing layer sha256:20d547ab5eb53128ec992abaae1d1f5a15bfe39d7a18ac0e5e265b383ebf71bc done
+2026-02-22T10:23:06.262Z [INFO] #19 writing layer sha256:211cb32a075077434953b11f271acddd74a960754bb9f4e6c91cf66f7eba6bcd 0.1s done
+2026-02-22T10:23:06.262Z [INFO] #19 writing layer sha256:2377d78cdd90ca829b6e3038404dbca3d045cc03656bd77cb47fd0b2f34824c6
+2026-02-22T10:23:06.414Z [INFO] #19 writing layer sha256:2377d78cdd90ca829b6e3038404dbca3d045cc03656bd77cb47fd0b2f34824c6 done
+2026-02-22T10:23:06.414Z [INFO] #19 writing layer sha256:254ca252713b9eb43346aee7959c559f241c1509441711206b697e1768565087
+2026-02-22T10:23:07.960Z [INFO] #19 writing layer sha256:254ca252713b9eb43346aee7959c559f241c1509441711206b697e1768565087 1.7s done
+2026-02-22T10:23:07.960Z [INFO] #19 writing layer sha256:3288913d5f128020c71260b4e042a0fdda1ccf5966b3d1c9ef205a5099796a74
+2026-02-22T10:23:08.113Z [INFO] #19 writing layer sha256:3288913d5f128020c71260b4e042a0fdda1ccf5966b3d1c9ef205a5099796a74 done
+2026-02-22T10:23:08.113Z [INFO] #19 writing layer sha256:341f770ab443364203bfacbdfab9ca84f2b5f106309b42ba902dd64403a1526a done
+2026-02-22T10:23:08.113Z [INFO] #19 writing layer sha256:38768b8ccec3bc9860b650afc9bdcbae6975bf34191c5ac8ac6a701ac669f467
+2026-02-22T10:23:14.758Z [INFO] #19 writing layer sha256:38768b8ccec3bc9860b650afc9bdcbae6975bf34191c5ac8ac6a701ac669f467 6.8s done
+2026-02-22T10:23:14.758Z [INFO] #19 writing layer sha256:3cebf1eed275656e18b000e92e3039ba58ace3d24e0d8ca7b8b58e67d1062125
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:3cebf1eed275656e18b000e92e3039ba58ace3d24e0d8ca7b8b58e67d1062125 0.0s done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:44ecfd8f3adf74763dab1760d0830210cd6d103f7818219d66ab16e8c028f15f done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:52a5515aef88a30087855f1aea16480c9b3f88f5b596e2575d95f805fa827a66 done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:56e0351b98767487b3c411034be95479ed1710bb6be860db6df0be3a98653027 done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:5fb46129e07258231a8355c249ce1de49b5147e432b4fbace0eb0a5d7819c81c 0.0s done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:651ac1d2a7ae734ea6bb9bbef3e36d52689f7964404fb32c53e540f2d019a1ff done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:656c59fc28eb4fa98dcaa48a3cd773922affebdbd42b7e8e78796a3600b1e457 done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:671efd75ddb3afa4c8b127c948428c6142bd3cedaf3b851fa7932e576c1fde5c done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:6cde01e9af6121fa850862b2b1bdcdd0b78e6efbaa87e9da4c93a02fab1eecbb done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:77c5d5a121d582b9bed76ba030514196fc1f7fa0a97d644dd9f48be27fc44030 done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:780c60bdd0a84d7e8861ff0bc828f6afaf0e447c19f27355b12f0e37ee8c7111 done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:7aea4d825dbaab05a9a01f1ff971533795cb90f063d3789613855c7c038b0f17 done
+2026-02-22T10:23:14.932Z [INFO] #19 writing layer sha256:7b37ec817e61bef52d58c3781338dc84086975211a1cc7f4be9340f8163c1358 done
+2026-02-22T10:23:14.933Z [INFO] #19 writing layer sha256:9dbd0548b87cc3d708ac833e95eaafe8434a893796e2ef65a6c1302fe9595302 done
+2026-02-22T10:23:14.933Z [INFO] #19 writing layer sha256:a5967ca63575d4b3e1eb3092121cb9c98aa3d8a285da608b98278273800b01b9 done
+2026-02-22T10:23:14.933Z [INFO] #19 writing layer sha256:aa315b7808f0b5e5badf02398e1f7ce1780952eda559defa9fb204e4f19c54c4 done
+2026-02-22T10:23:14.933Z [INFO] #19 writing layer sha256:abd37781279730ecad60f74375415f443455a246edebd3d3cd0253f5a58534bd done
+2026-02-22T10:23:14.933Z [INFO] #19 writing layer sha256:afae2e58c21592a24791ecc7c032f4eb2a1f279ebc922dd3f5d061f62ccb27ce 0.1s done
+2026-02-22T10:23:14.933Z [INFO] #19 writing layer sha256:b08eef4b90c81de27f73f4aa3522ac14ee1e1146db910e97e17d9d25a969a292
+2026-02-22T10:23:15.110Z [INFO] #19 writing layer sha256:b08eef4b90c81de27f73f4aa3522ac14ee1e1146db910e97e17d9d25a969a292 done
+2026-02-22T10:23:15.110Z [INFO] #19 writing layer sha256:b19e055bc71a1fa829dff807f4fbff0bb6f8ff9e0d24381021199b9abd37cc40
+2026-02-22T10:23:15.299Z [INFO] #19 writing layer sha256:b19e055bc71a1fa829dff807f4fbff0bb6f8ff9e0d24381021199b9abd37cc40 0.4s done
+2026-02-22T10:23:15.299Z [INFO] #19 writing layer sha256:c868322d41012c4c8c7a47807ec9da5a73e6fba9d43508f958818fedecfdd7d0
+2026-02-22T10:23:15.492Z [INFO] #19 writing layer sha256:c868322d41012c4c8c7a47807ec9da5a73e6fba9d43508f958818fedecfdd7d0 0.0s done
+2026-02-22T10:23:15.492Z [INFO] #19 writing layer sha256:cbd31f6689780721f0f8ee58464ab9755b4bceea15466b58604de89c846e96fa 0.0s done
+2026-02-22T10:23:15.492Z [INFO] #19 writing layer sha256:cc6a40a7ca920013447c8e8b56888cf9052f8f92f3448c67ce10acfceaa9c95a done
+2026-02-22T10:23:15.492Z [INFO] #19 writing layer sha256:e123ecc15ebc53d7e5ae372ad983794675b61556bf1a6ab32c3351c660481f7b
+2026-02-22T10:23:17.441Z [INFO] #19 writing layer sha256:e123ecc15ebc53d7e5ae372ad983794675b61556bf1a6ab32c3351c660481f7b 2.1s done
+2026-02-22T10:23:17.441Z [INFO] #19 writing layer sha256:ece84004a3cd8e7689a2ff0b1a1856a941e6cc31f7ec1eedc39073035a7adddd
+2026-02-22T10:23:17.588Z [INFO] #19 preparing build cache for export 11.4s done
+2026-02-22T10:23:17.588Z [INFO] #19 writing layer sha256:ece84004a3cd8e7689a2ff0b1a1856a941e6cc31f7ec1eedc39073035a7adddd done
+2026-02-22T10:23:17.588Z [INFO] #19 writing layer sha256:f2e1cdc0f06cd386f34365e18e7ff9c71b33421ca85983b2ec49a431b8602d14 done
+2026-02-22T10:23:17.588Z [INFO] #19 writing layer sha256:fc5398be2cb5046540483506f64caad54db6a0c992ddd1ac93b179c04d2566e5 done
+2026-02-22T10:23:17.588Z [INFO] #19 writing config sha256:86659bf7143fcc631d0c1b92d6eaa5c34bb400b2cc8231f33649d64d38c62acc 0.0s done
+2026-02-22T10:23:17.588Z [INFO] #19 writing cache manifest sha256:601a50a133fcf3660d793b8a45a5762abd652a126af86b630cccb111c953cb82 0.0s done
+2026-02-22T10:23:17.588Z [INFO] #19 DONE 11.4s
+2026-02-22T10:23:17.589Z [INFO] WARNING: current commit information was not captured by the build: git was not found in the system: exec: "git": executable file not found in $PATH
+2026-02-22T10:23:17.607Z [INFO] Build complete.
+2026-02-22T10:23:17.763Z [INFO] Pushing image to registry. This takes some time - please be patient.
+2026-02-22T10:23:17.771Z [INFO] Starting registry push
+2026-02-22T10:23:17.771Z [INFO] Extracting /app/registry-push/output.tar to /app/registry-push/.output-image
+2026-02-22T10:23:21.379Z [INFO] Extraction complete
+2026-02-22T10:23:21.379Z [INFO] Push registry.runpod.net/703deuce-upscale-main-dockerfile:7c2135d6c
+2026-02-22T10:23:21.379Z [INFO] 37 layers, 7.03 GB total
+2026-02-22T10:23:21.379Z [INFO]   56e0351b9876  layer      26.2 MB
+2026-02-22T10:23:21.379Z [INFO]   20d547ab5eb5  layer       7.6 MB
+2026-02-22T10:23:21.379Z [INFO]   ece84004a3cd  layer      53.6 MB
+2026-02-22T10:23:21.379Z [INFO]   b08eef4b90c8  layer        186 B
+2026-02-22T10:23:21.379Z [INFO]   aa315b7808f0  layer       6.7 KB
+2026-02-22T10:23:21.379Z [INFO]   3288913d5f12  layer      1.29 GB
+2026-02-22T10:23:21.379Z [INFO]   afae2e58c215  layer      60.8 KB
+2026-02-22T10:23:21.379Z [INFO]   52a5515aef88  layer       1.6 KB
+2026-02-22T10:23:21.379Z [INFO]   fc5398be2cb5  layer       1.5 KB
+2026-02-22T10:23:21.380Z [INFO]   c868322d4101  layer      2.28 GB
+2026-02-22T10:23:21.380Z [INFO]   77c5d5a121d5  layer      83.9 KB
+2026-02-22T10:23:21.380Z [INFO]   44ecfd8f3adf  layer         99 B
+2026-02-22T10:23:21.380Z [INFO]   780c60bdd0a8  layer     191.2 MB
+2026-02-22T10:23:21.380Z [INFO]   cc6a40a7ca92  layer      10.1 MB
+2026-02-22T10:23:21.380Z [INFO]   b19e055bc71a  layer         92 B
+2026-02-22T10:23:21.380Z [INFO]   a5967ca63575  layer      2.32 GB
+2026-02-22T10:23:21.380Z [INFO]   651ac1d2a7ae  layer      75.5 MB
+2026-02-22T10:23:21.380Z [INFO]   2377d78cdd90  layer      22.3 MB
+2026-02-22T10:23:21.380Z [INFO]   6cde01e9af61  layer      22.3 MB
+2026-02-22T10:23:21.380Z [INFO]   7b37ec817e61  layer        730 B
+2026-02-22T10:23:21.380Z [INFO]   656c59fc28eb  layer        749 B
+2026-02-22T10:23:21.380Z [INFO]   abd377812797  layer        298 B
+2026-02-22T10:23:21.380Z [INFO]   7aea4d825dba  layer        933 B
+2026-02-22T10:23:21.380Z [INFO]   13aad136a458  layer        932 B
+2026-02-22T10:23:21.380Z [INFO]   671efd75ddb3  layer        236 B
+2026-02-22T10:23:21.380Z [INFO]   f2e1cdc0f06c  layer       1.5 KB
+2026-02-22T10:23:21.380Z [INFO]   9dbd0548b87c  layer       1.6 KB
+2026-02-22T10:23:21.380Z [INFO]   341f770ab443  layer      56.2 MB
+2026-02-22T10:23:21.380Z [INFO]   e123ecc15ebc  layer     151.6 MB
+2026-02-22T10:23:21.380Z [INFO]   38768b8ccec3  layer     464.5 MB
+2026-02-22T10:23:21.380Z [INFO]   254ca252713b  layer      85.6 MB
+2026-02-22T10:23:21.380Z [INFO]   211cb32a0750  layer       2.2 MB
+2026-02-22T10:23:21.381Z [INFO]   cbd31f668978  layer         93 B
+2026-02-22T10:23:21.381Z [INFO]   3cebf1eed275  layer        160 B
+2026-02-22T10:23:21.381Z [INFO]   4f4fb700ef54  layer         32 B
+2026-02-22T10:23:21.381Z [INFO]   5fb46129e072  layer       3.0 KB
+2026-02-22T10:23:21.381Z [INFO]   26f6c810c5bf  config     26.4 KB
+2026-02-22T10:23:21.609Z [INFO]   cached 3288913d5f12 1.29 GB
+2026-02-22T10:23:21.613Z [INFO]   cached fc5398be2cb5 1.5 KB
+2026-02-22T10:23:21.617Z [INFO]   cached 44ecfd8f3adf 99 B
+2026-02-22T10:23:21.620Z [INFO]   cached 77c5d5a121d5 83.9 KB
+2026-02-22T10:23:21.621Z [INFO]   cached 7aea4d825dba 933 B
+2026-02-22T10:23:21.627Z [INFO]   cached 56e0351b9876 26.2 MB
+2026-02-22T10:23:21.814Z [INFO]   cached aa315b7808f0 6.7 KB
+2026-02-22T10:23:21.818Z [INFO]   cached c868322d4101 2.28 GB
+2026-02-22T10:23:21.822Z [INFO]   cached 52a5515aef88 1.6 KB
+2026-02-22T10:23:21.826Z [INFO]   cached 780c60bdd0a8 191.2 MB
+2026-02-22T10:23:21.829Z [INFO]   cached 13aad136a458 932 B
+2026-02-22T10:23:21.839Z [INFO]   cached afae2e58c215 60.8 KB
+2026-02-22T10:23:21.844Z [INFO]   cached cc6a40a7ca92 10.1 MB
+2026-02-22T10:23:21.844Z [INFO]   cached b19e055bc71a 92 B
+2026-02-22T10:23:21.942Z [INFO]   cached 2377d78cdd90 22.3 MB
+2026-02-22T10:23:21.954Z [INFO]   cached b08eef4b90c8 186 B
+2026-02-22T10:23:21.954Z [INFO]   cached 7b37ec817e61 730 B
+2026-02-22T10:23:21.959Z [INFO]   cached 651ac1d2a7ae 75.5 MB
+2026-02-22T10:23:21.960Z [INFO]   cached a5967ca63575 2.32 GB
+2026-02-22T10:23:21.963Z [INFO]   cached 671efd75ddb3 236 B
+2026-02-22T10:23:21.972Z [INFO]   cached 6cde01e9af61 22.3 MB
+2026-02-22T10:23:21.977Z [INFO]   cached 9dbd0548b87c 1.6 KB
+2026-02-22T10:23:21.977Z [INFO]   cached 20d547ab5eb5 7.6 MB
+2026-02-22T10:23:21.983Z [INFO]   cached f2e1cdc0f06c 1.5 KB
+2026-02-22T10:23:22.032Z [INFO]   cached 656c59fc28eb 749 B
+2026-02-22T10:23:22.114Z [INFO]   cached 4f4fb700ef54 32 B
+2026-02-22T10:23:22.175Z [INFO]   cached abd377812797 298 B
+2026-02-22T10:23:22.193Z [INFO]   cached 341f770ab443 56.2 MB
+2026-02-22T10:23:22.211Z [INFO]   cached ece84004a3cd 53.6 MB
+2026-02-22T10:23:22.258Z [INFO] [direct-plan] 254ca252713b single size=85.6 MB
+2026-02-22T10:23:22.286Z [INFO] [direct-plan] 38768b8ccec3 single size=464.5 MB
+2026-02-22T10:23:22.670Z [INFO] [direct-plan] e123ecc15ebc single size=151.6 MB
+2026-02-22T10:23:25.130Z [INFO]   uploaded cbd31f668978 93 B
+2026-02-22T10:23:25.361Z [INFO]   uploaded 3cebf1eed275 160 B
+2026-02-22T10:23:25.411Z [INFO]   uploaded 5fb46129e072 3.0 KB
+2026-02-22T10:23:25.505Z [INFO]   uploaded 26f6c810c5bf 26.4 KB
+2026-02-22T10:23:26.089Z [INFO]   uploaded 254ca252713b 85.6 MB
+2026-02-22T10:23:26.379Z [INFO] [status] 34/37 layers 85.6 MB in 5.00s @ 17.1 MB/s
+2026-02-22T10:23:27.500Z [INFO]   uploaded 211cb32a0750 2.2 MB
+2026-02-22T10:23:31.169Z [INFO]   uploaded e123ecc15ebc 151.6 MB
+2026-02-22T10:23:31.525Z [INFO] [status] 36/37 layers 237.2 MB in 10.02s @ 23.7 MB/s
+2026-02-22T10:23:36.379Z [INFO] [status] 36/37 layers 237.2 MB in 15.00s @ 15.8 MB/s
+2026-02-22T10:23:40.647Z [INFO]   uploaded 38768b8ccec3 464.5 MB
+2026-02-22T10:23:40.647Z [INFO] [status] 37/37 layers 701.7 MB in 19.27s @ 36.4 MB/s
+2026-02-22T10:23:46.955Z [INFO] ✓ Pushed 7.03 GB in 25.6s (281.3 MB/s)
+2026-02-22T10:23:46.959Z [INFO] Successfully pushed image to registry.

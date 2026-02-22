@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-# Core deps realesrgan/basicsr need (sometimes not pulled in by pip)
-RUN pip install numpy pillow pyyaml opencv-python-headless
+# NumPy must be 1.x for PyTorch 2.1 (numpy 2.x breaks torch.from_numpy)
+RUN pip install "numpy<2" pillow pyyaml opencv-python-headless
 RUN pip install realesrgan basicsr facexlib gfpgan
 RUN pip install runpod requests
 
