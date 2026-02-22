@@ -1,19 +1,21 @@
 """
 RunPod serverless handler for video upscaling with Real-ESRGAN.
-Accepts video_url (or file path), runs ffmpeg → Real-ESRGAN → ffmpeg,
+Accepts video_url (or file path), runs ffmpeg → Real-ESRGAN (CUDA) → ffmpeg,
 returns the upscaled video directly as base64 (no S3).
+Uses PyTorch/CUDA Real-ESRGAN (no Vulkan required).
 """
 import os
 import subprocess
 import uuid
 import base64
-import json
 
+import cv2
 from runpod import serverless
+from realesrgan import RealESRGANer
+from realesrgan.archs.srvgg_arch import SRVGGNetCompact
 
-# Real-ESRGAN ncnn-vulkan (common path in RunPod / community images)
-REAL_ESRGAN_BIN = os.environ.get("REAL_ESRGAN_BIN", "/workspace/realesrgan-ncnn-vulkan")
 DEFAULT_MODEL = os.environ.get("REAL_ESRGAN_MODEL", "realesr-animevideov3")
+WEIGHTS_DIR = "/workspace/weights"
 
 # 720p -> 1080p = 1.5x, 720p -> 2K (1440p) = 2x
 TARGET_RESOLUTION_SCALE = {
@@ -90,6 +92,41 @@ def resolve_scale(scale: float | None, target_resolution: str | None) -> float:
     return DEFAULT_SCALE
 
 
+def upscale_frames_cuda(work_dir: str, scale: float, model_name: str) -> None:
+    """Upscale all frames using Real-ESRGAN CUDA (no Vulkan)."""
+    model = SRVGGNetCompact(
+        num_in_ch=3,
+        num_out_ch=3,
+        num_feat=64,
+        num_conv=16,
+        upscale=4,
+        act_type="prelu",
+    )
+    model_path = f"{WEIGHTS_DIR}/{model_name}.pth"
+    upsampler = RealESRGANer(
+        scale=4,
+        model_path=model_path,
+        model=model,
+        tile=512,
+        tile_pad=10,
+        pre_pad=0,
+        half=True,
+    )
+
+    frame_files = sorted(
+        f
+        for f in os.listdir(work_dir)
+        if f.startswith("frame_") and f.endswith(".png")
+    )
+    for fname in frame_files:
+        in_path = os.path.join(work_dir, fname)
+        out_name = fname.replace("frame_", "frames_upscaled_")
+        out_path = os.path.join(work_dir, out_name)
+        img = cv2.imread(in_path, cv2.IMREAD_UNCHANGED)
+        output, _ = upsampler.enhance(img, outscale=scale)
+        cv2.imwrite(out_path, output)
+
+
 def upscale_video(
     input_path: str,
     scale: float = DEFAULT_SCALE,
@@ -120,14 +157,8 @@ def upscale_video(
         frame_pattern,
     ])
 
-    # 2) Run Real-ESRGAN on frames
-    run([
-        REAL_ESRGAN_BIN,
-        "-i", frame_pattern,
-        "-o", upscaled_frame_pattern,
-        "-s", str(scale),
-        "-n", model,
-    ])
+    # 2) Run Real-ESRGAN on frames (CUDA, no Vulkan)
+    upscale_frames_cuda(work_dir, scale=scale, model_name=model)
 
     # 3) Reassemble upscaled frames (CRF + preset for quality)
     run([
