@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install realesrgan basicsr facexlib gfpgan opencv-python-headless
+# Core deps realesrgan/basicsr need (sometimes not pulled in by pip)
+RUN pip install numpy pillow pyyaml opencv-python-headless
+RUN pip install realesrgan basicsr facexlib gfpgan
 RUN pip install runpod requests
 
 # Download model weights (anime video v3)
