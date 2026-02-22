@@ -31,7 +31,8 @@ TARGET_RESOLUTION_SCALE = {
     "1440p": 2.0,
 }
 DEFAULT_SCALE = 1.5  # 1080p from 720p
-DEFAULT_CRF = 20
+# Lower CRF = sharper (every ~6 points roughly doubles quality). 16 = noticeably sharper; 14 = very sharp, larger file.
+DEFAULT_CRF = 16
 DEFAULT_PRESET = "medium"
 
 
@@ -203,7 +204,7 @@ def handler(event: dict) -> dict:
         "scale": 1.5,                    // optional; overrides target_resolution if set
         "model": "realesr-animevideov3", // Real-ESRGAN model name
         "output_fps": 30,                 // optional; default = source fps
-        "crf": 20,                       // x264 quality (18–23 typical, lower = better)
+        "crf": 16,                       // x264 quality (14–20 for sharp AI video; lower = sharper, larger)
         "preset": "medium"                // x264 preset: ultrafast–veryslow
       }
     }

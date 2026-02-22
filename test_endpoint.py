@@ -7,12 +7,16 @@ Requires: pip install -r requirements-test.txt  (or pip install requests)
 """
 import os
 import sys
+import time
 import base64
 import requests
 
 # --- Configure these ---
-RUNPOD_ENDPOINT = "https://api.runpod.ai/v2/uzhuiwcgootp0m/runsync"
+# Use ?wait=300000 so RunPod holds the connection up to 5 min (default is 90s and often returns IN_PROGRESS early)
+RUNPOD_ENDPOINT = "https://api.runpod.ai/v2/uzhuiwcgootp0m/runsync?wait=300000"
 RUNPOD_API_KEY = "rpa_5B3UJFTJCQW65L0IZPHBOUC41742AESP9B378LSQrf9q5a"
+# Base URL for status polling (same endpoint id, no /runsync)
+RUNPOD_STATUS_BASE = "https://api.runpod.ai/v2/uzhuiwcgootp0m"
 
 # Public URL of the video to upscale (e.g. upload test.mp4 to a bucket or file host)
 VIDEO_URL = os.environ.get("VIDEO_URL", "")
@@ -44,6 +48,23 @@ def upload_for_url(local_path: str) -> str:
     url = r.text.strip()
     print(f"Uploaded. Public URL: {url}")
     return url
+
+
+def poll_until_done(job_id: str, status_base: str, headers: dict, poll_interval: int = 5, timeout: int = 600):
+    """Poll GET status/{job_id} until COMPLETED, FAILED, or timeout. Returns final response dict."""
+    url = f"{status_base.rstrip('/')}/status/{job_id}"
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        r = requests.get(url, headers=headers, timeout=30)
+        r.raise_for_status()
+        data = r.json()
+        status = data.get("status", "")
+        if status == "COMPLETED":
+            return data
+        if status in ("FAILED", "TIMED_OUT", "CANCELLED"):
+            return data
+        time.sleep(poll_interval)
+    raise TimeoutError(f"Job {job_id} still not complete after {timeout}s")
 
 
 def run_test(video_url_or_path: str, target_resolution: str = "1080p", timeout: int = 600) -> None:
@@ -105,6 +126,17 @@ def run_test(video_url_or_path: str, target_resolution: str = "1080p", timeout: 
         sys.exit(1)
 
     status = data.get("status", "")
+    # If runsync returned early (IN_PROGRESS/IN_QUEUE), poll status until done
+    if status in ("IN_PROGRESS", "IN_QUEUE") and data.get("id"):
+        job_id = data["id"]
+        print(f"Job still running (status={status}). Polling /status/{job_id} until complete...")
+        try:
+            data = poll_until_done(job_id, RUNPOD_STATUS_BASE, headers, poll_interval=5, timeout=timeout)
+            status = data.get("status", "")
+        except TimeoutError as e:
+            print(f"ERROR: {e}")
+            sys.exit(1)
+
     output = data.get("output") or {}
 
     if status != "COMPLETED" or not output:
