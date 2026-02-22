@@ -4,6 +4,13 @@ Accepts video_url (or file path), runs ffmpeg → Real-ESRGAN (CUDA) → ffmpeg,
 returns the upscaled video directly as base64 (no S3).
 Uses PyTorch/CUDA Real-ESRGAN (no Vulkan required).
 """
+# Temporary: confirm runtime Python and numpy (check RunPod worker logs, then remove)
+import sys
+print("Python:", sys.executable)
+print("Path:", sys.path)
+import numpy
+print("Numpy:", numpy.__version__)
+
 import os
 import subprocess
 import uuid

@@ -11,19 +11,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
+# Install into the same Python that runs at runtime (RunPod gotcha: pip vs python3.10 -m pip)
 # NumPy must be 1.x for PyTorch 2.1 (numpy 2.x breaks torch.from_numpy)
-RUN pip install "numpy<2" pillow pyyaml opencv-python-headless
-RUN pip install realesrgan basicsr facexlib gfpgan
-RUN pip install runpod requests
+RUN python3.10 -m pip install --upgrade pip && \
+    python3.10 -m pip install \
+        "numpy<2" \
+        pillow \
+        pyyaml \
+        opencv-python-headless \
+        realesrgan \
+        basicsr \
+        facexlib \
+        gfpgan \
+        runpod \
+        requests
 
-# Download model weights (anime video v3)
+# Download model weights at build time so workers don't download on every job
 RUN mkdir -p /workspace/weights && \
     wget -q https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth \
     -O /workspace/weights/realesr-animevideov3.pth
 
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY handler.py .
+COPY handler.py /handler.py
 
-CMD ["python3", "-u", "/app/handler.py"]
+CMD ["python3.10", "-u", "/handler.py"]
