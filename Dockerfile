@@ -5,15 +5,15 @@ FROM nvidia/cuda:12.1.0-runtime-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 ENV WORKDIR_PATH=/workspace
 
+# Ubuntu 22.04: use default python3 (3.10); python3.11 not in default repos
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3.11 \
+    python3 \
     python3-pip \
-    python3.11-venv \
+    python3-venv \
     ffmpeg \
     curl \
     wget \
     unzip \
-    vulkan-utils \
     libvulkan1 \
     && rm -rf /var/lib/apt/lists/*
 
@@ -30,10 +30,10 @@ RUN mkdir -p ${WORKDIR_PATH} && cd ${WORKDIR_PATH} \
 
 WORKDIR /app
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python3 -m pip install --no-cache-dir -r requirements.txt
 COPY handler.py .
 
 ENV REAL_ESRGAN_BIN=${WORKDIR_PATH}/realesrgan-ncnn-vulkan
 ENV REAL_ESRGAN_MODEL=realesr-animevideov3
 
-CMD ["python", "-u", "/app/handler.py"]
+CMD ["python3", "-u", "/app/handler.py"]
